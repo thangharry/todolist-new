@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    /* background: linear-gradient(to right, #ffe000, #799f0c); */
+
+    background-color: #1e272e;
+}
+.container {
+    width: 400px;
+    background-color: #fff;
+    margin: 10% auto;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 14px -1px rgba(245, 245, 245, 0.75);
+    -webkit-box-shadow: 5px 5px 14px -1px rgba(245, 245, 245, 0.75);
+    -moz-box-shadow: 5px 5px 14px -1px rgba(245, 245, 245, 0.75);
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+}
+button {
+    padding: 5px 10px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 0 12px 0 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+button:focus {
+    border-radius: 12px 0 12px 0;
+}
+input {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.todos > li {
+    padding: 0px 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+.todos li span {
+    /* display: inline-block; */
+    width: 80%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.todos li i {
+    cursor: pointer;
+}
+.replace,
+.clear {
+    padding: 5px;
+}
+.completed {
+    color: #aaa;
+}
+.completed span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: line-through;
+}
